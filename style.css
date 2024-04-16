@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+:root[data-theme="light"] {
+    --text: #040705;
+    --background: #f9fcfa;
+    --primary: #fcc522;
+    --secondary: #9bd6ac;
+    --accent: #79ce91;
+}
+:root[data-theme="dark"] {
+    --text: #f9fbf9;
+    --background: #030705;
+    --primary: #fcc522;
+    --secondary: #29653a;
+    --accent: #32864a;
+}
+
+body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+header {
+    height: 50px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img.logo_prism {
+    width: 50px;
+    height: auto;
+}
+
+.navtext {
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fcc522
+}
+
+.navtext:hover {
+    color: #f9fbf9;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 5em;
+    margin-bottom: -0.15em;
+    text-align: left;
+    padding-left: 197px;
+}
+
+h1,h2 {
+    color:#fcc522;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0%;
+    padding-left: 200px;
+}
+.white-name {
+    color: #f9fbf9;
+}
+
+.scroll-imagegallery {
+    margin-top:10%;
+    display: flex;
+    gap: 50px;
+    aspect-ratio: 16 / 9;
+}
+.scroll-imagegallery img {
+    border:#fcc522 solid 10px;
+    border-radius: 50px;
+    height: 480px;
+    width: 850px;
+    object-fit:fill;
+}
