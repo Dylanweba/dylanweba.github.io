@@ -7,6 +7,7 @@
     --secondary: #9bd6ac;
     --accent: #79ce91;
 }
+
 :root[data-theme="dark"] {
     --text: #f9fbf9;
     --background: #030705;
@@ -117,7 +118,7 @@ h2 {
     cursor: pointer;
     border: 5px solid #fcc522;
     overflow: hidden;
-    border-radius: 20%;
+    border-radius: 40px;
 }
 
 .scroll-images::-webkit-scrollbar {
@@ -128,17 +129,24 @@ h2 {
 .child-img {
     width: 100%;
     height: 100%;
-    
 }
 
 .scroller-icon {
     color: #fcc522;
-    background-color: black;
+    background-color: #030703;
     font-size: 50px;
     outline: none;
     border: none;
     padding: 0px 20px;
     cursor: pointer;
+}
+
+.scroller-icon span {
+    margin: auto;
+    text-align: center;
+    margin-top:40px;
+    margin-left: -10px;
+    font-size: 200%;
 }
 
 .scroller-icon:hover {
