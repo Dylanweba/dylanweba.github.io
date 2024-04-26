@@ -1,13 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-
-:root[data-theme="light"] {
-    --text: #040705;
-    --background: #f9fcfa;
-    --primary: #fcc522;
-    --secondary: #9bd6ac;
-    --accent: #79ce91;
-}
-
 :root[data-theme="dark"] {
     --text: #f9fbf9;
     --background: #030705;
@@ -17,18 +7,17 @@
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--background);
     color: var(--text);
-
     height: 100vh;
-    width:100%;
+    width: 100%;
 }
 
 header {
@@ -50,7 +39,7 @@ nav img.logo_prism {
 .navtext {
     text-decoration: none;
     padding-left: 20px;
-    color: #fcc522
+    color: #fcc522;
 }
 
 .navtext:hover {
@@ -82,82 +71,106 @@ h2 {
     margin-top: 0%;
     padding-left: 200px;
 }
+
 .white-name {
     color: #f9fbf9;
 }
 
 .main-scroll-div {
-    margin:0 auto;
-    width: 90%;
-    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .cover {
-    position: relative;
-    width: 90%;
+    width: 100%;
     height: 50%;
+    margin: auto;
 }
 
 .scroll-images {
-    width: 100%;
+    width: auto; /* Allow horizontal overflow */
     height: auto;
     display: flex;
-    justify-content: left;
-    overflow: auto;
+    justify-content: flex-start; /* Ensure content starts from the left */
+    overflow-x: hidden; /* Disable browser's default snapping behavior */
     position: relative;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .child {
-    min-width: 600px;
     height: 450px;
+    aspect-ratio: 17 / 9;
+    min-width: calc(450px * (17 / 9)); /* Calculate the minimum width based on the aspect ratio */
     margin: 1px 20px;
     cursor: pointer;
     border: 5px solid #fcc522;
     overflow: hidden;
     border-radius: 40px;
+    scroll-snap-align: start;
 }
+
 
 .scroll-images::-webkit-scrollbar {
     -webkit-appearance: none;
+    
 }
-
 
 .child-img {
     width: 100%;
     height: 100%;
 }
 
+.child.scroll-placeholder {
+    border: none;
+    overflow: hidden;
+    cursor: default;
+    user-select: none;
+}
+
 .scroller-icon {
     color: #fcc522;
-    background-color: #030703;
+    background: transparent;
     font-size: 50px;
     outline: none;
     border: none;
-    padding: 0px 20px;
     cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    top: 66%;
 }
 
 .scroller-icon span {
-    margin: auto;
-    text-align: center;
-    margin-top:40px;
-    margin-left: -10px;
+
     font-size: 200%;
+}
+
+.scroller-icon.left_b {
+    color: aqua;
+    left: 0;
+    
+}
+
+.scroller-icon.right_b {
+    color: red;
+    right: 0;
 }
 
 .scroller-icon:hover {
     color: #f9f9f9;
-
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
+
+/* My Logo as a clip path:
+clip-path: polygon(45% 17%, 31% 71%, 52% 84%, 69% 62%); */
+
+
+
+
