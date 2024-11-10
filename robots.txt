@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dylanweba.github.io/sitemap.xml
