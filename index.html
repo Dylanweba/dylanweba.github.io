@@ -67,8 +67,9 @@
             "name": "Dylan Weber",
             "jobTitle": "3D Artist and Graphic Designer",
             "url": "https://dylanweba.github.io/",
-            "image": "https://dylanweba.github.io/images/prisma_logobig.png",
+            "image": { "@id": "https://dylanweba.github.io/#logo" },
             "description": "Dylan Weber is a 3D artist and graphic designer from Germany, creating game art, UI design, 3D models, and visual effects for interactive media.",
+            "nationality": { "@type": "Country", "name": "Germany" },
             "alumniOf": {
               "@type": "CollegeOrUniversity",
               "name": "SAE Institute"
@@ -92,13 +93,73 @@
             ]
           },
           {
+            "@type": "Organization",
+            "@id": "https://dylanweba.github.io/#organization",
+            "name": "Dylan Weber",
+            "alternateName": "Dylanweba",
+            "url": "https://dylanweba.github.io/",
+            "description": "The portfolio and design practice of Dylan Weber, a 3D artist and graphic designer specializing in game art, UI design, and 3D assets for interactive media.",
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://dylanweba.github.io/#logo",
+              "url": "https://dylanweba.github.io/images/prisma_logobig.png",
+              "contentUrl": "https://dylanweba.github.io/images/prisma_logobig.png",
+              "caption": "Dylan Weber"
+            },
+            "image": { "@id": "https://dylanweba.github.io/#logo" },
+            "founder": { "@id": "https://dylanweba.github.io/#dylan-weber" },
+            "sameAs": [
+              "https://www.linkedin.com/in/dylanweb/",
+              "https://www.artstation.com/dylanweber",
+              "https://github.com/Dylanweba",
+              "https://www.behance.net/dylanweber"
+            ]
+          },
+          {
             "@type": "WebSite",
             "@id": "https://dylanweba.github.io/#website",
             "url": "https://dylanweba.github.io/",
             "name": "Dylan Weber Portfolio",
             "description": "Portfolio of Dylan Weber, a 3D artist and graphic designer.",
-            "publisher": { "@id": "https://dylanweba.github.io/#dylan-weber" },
+            "publisher": { "@id": "https://dylanweba.github.io/#organization" },
             "inLanguage": "en"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://dylanweba.github.io/#primaryimage",
+            "url": "https://dylanweba.github.io/images/forgottenlore_2.png",
+            "contentUrl": "https://dylanweba.github.io/images/forgottenlore_2.png",
+            "caption": "3D environment art by Dylan Weber"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://dylanweba.github.io/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://dylanweba.github.io/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About",
+                "item": "https://dylanweba.github.io/#about"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Featured Work",
+                "item": "https://dylanweba.github.io/#featured-work"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Connect",
+                "item": "https://dylanweba.github.io/#connect"
+              }
+            ]
           },
           {
             "@type": "ProfilePage",
@@ -107,7 +168,57 @@
             "name": "Dylan Weber | 3D Artist & Graphic Designer",
             "isPartOf": { "@id": "https://dylanweba.github.io/#website" },
             "about": { "@id": "https://dylanweba.github.io/#dylan-weber" },
-            "dateModified": "2026-06-17"
+            "mainEntity": { "@id": "https://dylanweba.github.io/#dylan-weber" },
+            "primaryImageOfPage": {
+              "@id": "https://dylanweba.github.io/#primaryimage"
+            },
+            "image": { "@id": "https://dylanweba.github.io/#primaryimage" },
+            "breadcrumb": { "@id": "https://dylanweba.github.io/#breadcrumb" },
+            "inLanguage": "en",
+            "datePublished": "2024-04-10",
+            "dateModified": "2026-06-17",
+            "hasPart": [
+              { "@id": "https://dylanweba.github.io/#forgotten-lore" },
+              { "@id": "https://dylanweba.github.io/#cs2-stickers" },
+              { "@id": "https://dylanweba.github.io/#blastzxne-2" }
+            ]
+          },
+          {
+            "@type": "VisualArtwork",
+            "@id": "https://dylanweba.github.io/#forgotten-lore",
+            "name": "Forgotten Lore",
+            "creator": { "@id": "https://dylanweba.github.io/#dylan-weber" },
+            "artform": "3D Art",
+            "artMedium": "Digital",
+            "image": "https://dylanweba.github.io/images/forgottenlore.png",
+            "url": "https://dylanweba.github.io/",
+            "dateCreated": "2024",
+            "isPartOf": { "@id": "https://dylanweba.github.io/#profilepage" },
+            "description": "Final diploma project at SAE Institute Bochum, a 3D recreation of the room from Edgar Allan Poe's The Raven, created with three classmates and showcasing advanced lighting and environmental design."
+          },
+          {
+            "@type": "VisualArtwork",
+            "@id": "https://dylanweba.github.io/#cs2-stickers",
+            "name": "CS2 Stickers",
+            "creator": { "@id": "https://dylanweba.github.io/#dylan-weber" },
+            "artform": "Graphic Design",
+            "artMedium": "Digital",
+            "image": "https://dylanweba.github.io/images/stickers_cs2_thumbnail.png",
+            "url": "https://steamcommunity.com/id/gamerorkanik/myworkshopfiles/?p=1",
+            "isPartOf": { "@id": "https://dylanweba.github.io/#profilepage" },
+            "description": "A set of stickers and a spray design created for the Counter-Strike 2 Steam Workshop."
+          },
+          {
+            "@type": "VisualArtwork",
+            "@id": "https://dylanweba.github.io/#blastzxne-2",
+            "name": "Blastzxne 2",
+            "creator": { "@id": "https://dylanweba.github.io/#dylan-weber" },
+            "artform": "Graphic Design",
+            "artMedium": "Digital",
+            "image": "https://dylanweba.github.io/images/blastzone2.png",
+            "url": "https://pixum.itch.io/blastzone2",
+            "isPartOf": { "@id": "https://dylanweba.github.io/#profilepage" },
+            "description": "Visuals for a fast-paced, survivors-like game with minimalist geometric graphics, developed during a 2-week game jam."
           }
         ]
       }
