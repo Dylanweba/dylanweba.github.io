@@ -1,0 +1,34 @@
+# Dylan Weber
+
+> Portfolio of Dylan Weber, a 3D artist and graphic designer from Germany,
+> specializing in game art, UI design, 3D modeling, and visual effects for
+> interactive media.
+
+## About
+
+Dylan Weber is a 3D artist and graphic designer trained at SAE Institute
+Germany. He works on game jams, UI design, and 3D assets for interactive media,
+focusing on lighting, environment design, and visual effects.
+
+## Featured Projects
+
+- [Forgotten Lore](https://dylanweba.github.io/): Diploma final project at SAE
+  Institute Bochum — a 3D recreation of the room from Edgar Allan Poe's "The
+  Raven", created with three classmates.
+- [CS2 Stickers](https://steamcommunity.com/id/gamerorkanik/myworkshopfiles/?p=1):
+  Stickers and a spray designed for the Counter-Strike 2 Steam Workshop.
+- [Blastzxne 2](https://pixum.itch.io/blastzone2): Visuals for a survivors-like
+  game with minimalist geometry, made during a 2-week game jam.
+
+## Skills
+
+3D Modeling, Graphic Design, UI Design, Adobe Illustrator, Blender, Maya, Adobe
+Creative Cloud, Unreal Engine, Substance Painter.
+
+## Links
+
+- Portfolio: https://dylanweba.github.io/
+- LinkedIn: https://www.linkedin.com/in/dylanweb/
+- ArtStation: https://www.artstation.com/dylanweber
+- GitHub: https://github.com/Dylanweba
+- Behance: https://www.behance.net/dylanweber
