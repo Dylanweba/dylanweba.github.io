@@ -3,7 +3,7 @@
   "name": "Dylan Weber Portfolio",
   "icons": [
     {
-      "src": "/images/favicon.png",
+      "src": "/portfolio-icon.png",
       "type": "image/png",
       "sizes": "192x192"
     }
